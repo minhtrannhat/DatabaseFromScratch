@@ -1,5 +1,7 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
+
 #include "./inputbuffer.h"
 
 InputBuffer *new_input_buffer() {
@@ -55,7 +57,7 @@ void close_input_buffer(InputBuffer *input_buffer) {
   free(input_buffer);
 }
 
-void parse_input(InputBuffer* input_buffer){
+void parse_input(InputBuffer* input_buffer) {
 
     print_prompt();
     read_input(input_buffer);

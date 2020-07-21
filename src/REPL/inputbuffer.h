@@ -3,9 +3,6 @@
  */
 #include <sys/types.h>
 
-// for size_t and ssize_t
-#include <stdlib.h>
-
 // store user input in a buffer
 typedef struct {
   char *buffer;           // store the read line read by getline()
