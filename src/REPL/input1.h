@@ -1,8 +1,11 @@
+#include </usr/lib/clang/10.0.1/include/stddef.h>
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
+#include <stdlib.h>
 
 #include "./inputbuffer.h"
+
+#define NULL 0
 
 InputBuffer *new_input_buffer() {
   InputBuffer *input_buffer = (InputBuffer *)malloc(sizeof(InputBuffer));

@@ -1,7 +1,6 @@
-/* size_t and ssize_t are only available on POSIX system
- * so this header is included
- */
-#include <sys/types.h>
+/* code does not compile with gcc or mingw, only clang (on GNU/Linux) is supported */
+#include </usr/lib/clang/10.0.1/include/stddef.h>
+#include </usr/include/sys/types.h>
 
 // store user input in a buffer
 typedef struct {
