@@ -12,7 +12,7 @@ compares to the original source code in the tutorial which is a one long `main.c
 
 1. Make a folder called `bin` in the project root directory (next to the `src` folder).
 
-1. And run the following command in the pro root directory. 
+1. And run the following command in the project root directory. 
 ```
    make
 ```
