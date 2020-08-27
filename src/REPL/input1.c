@@ -1,9 +1,4 @@
-#include </usr/lib/clang/10.0.1/include/stddef.h>
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-
-#include "./inputbuffer.h"
+#include "../SQL_Compiler/sql_compiler.c"
 
 #define NULL 0
 
@@ -52,23 +47,4 @@ void read_input(InputBuffer *input_buffer) {
   // ignore trailing newline
   input_buffer->input_length = bytes_read - 1;
   input_buffer->buffer[bytes_read - 1] = 0;
-}
-
-// free the memory allocated for input_buffer
-void close_input_buffer(InputBuffer *input_buffer) {
-  free(input_buffer->buffer);
-  free(input_buffer);
-}
-
-void parse_input(InputBuffer* input_buffer) {
-
-    print_prompt();
-    read_input(input_buffer);
-
-    if (strcmp(input_buffer->buffer, ".exit") == 0) {
-      close_input_buffer(input_buffer);
-      exit(EXIT_SUCCESS);
-    } else {
-      printf("Unrecognized command '%s'.\n", input_buffer->buffer);
-    }
 }
