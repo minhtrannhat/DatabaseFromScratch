@@ -1,3 +1,4 @@
 bin/database
 src/compile_commands.json
 src/.ccls
+.idea/
