@@ -1,4 +1,6 @@
 /* code does not compile with gcc or mingw, only clang (on Unix systems) is supported */
+#pragma once
+
 #include </usr/lib/clang/10.0.1/include/stddef.h>
 #include </usr/include/sys/types.h>
 
